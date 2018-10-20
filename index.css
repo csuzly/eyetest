@@ -21,12 +21,12 @@ a {
     width: 100%;
 }
 
-a:hover {
+.hover :hover {
     border: white;
     border-style: solid;
     border-width: 2px; 
     padding-top: 18px;
     padding-bottom: 18px;
-    color: #fff;
+    border-color: #fff;
     border-radius: 5px; 
 }
