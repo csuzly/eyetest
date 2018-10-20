@@ -1,0 +1,11 @@
+html {
+    background-color: cadetblue;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+p {
+    color: black;
+    text-align: center;
+    padding: 20px;
+    background: rbga(0,0,0,0.8);
+}
