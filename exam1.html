@@ -14,18 +14,17 @@
         <p>
 			Question 1
         </p>	
-    	<p id="letter" type=""></p>
+    	<p id="letter"></p>
 	</body>
 </html>
 
 <script>
 
-    var letters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
-    document.getElementByID(letter).innerHTML= letters[Math.floor(Math.random() * 25)];
+    var letters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+    document.getElementById("letter").innerHTML= letters[Math.floor(Math.random()*letters.length)];
         
 </script>
         
-
 
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
