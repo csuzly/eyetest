@@ -5,23 +5,31 @@
 		<title>
 			GET-HIP Project
 		</title>
-		<link rel="stylesheet" href="index.css">
+
+		<link rel="stylesheet" href="exams.css">
 	</head>
 	<body>
 		<h1>
 			<a href="index.html">Online Optics</a>
+		<h1 class="header">
+
+			<a href="index.html">optics</a>
 		</h1>
-        <p>
+        <p class="subheader">
 			Question 1
-        </p>	
-    	<p id="letter"></p>
+		</p>
+		<h1> <p class="test" id="letter"> </p> </h1>
 	</body>
 </html>
 
 <script>
 
     var letters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
-    document.getElementById("letter").innerHTML= letters[Math.floor(Math.random()*letters.length)];
+    document.getElementById("letter").innerHTML= randomLetter();
+	
+	function randomLetter() {
+		return letters[Math.floor(Math.random()*letters.length)];
+	}
         
 </script>
         
@@ -30,6 +38,16 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
 <script type="text/javascript">
 if (annyang) {
+	console.log(annyang);
+  // Let's define our first command. First the text we expect, and then the function it should call
+  var commands = {
+    'answer': function() {
+        // sessionstorage.setItem("Question1", 1)
+        // window.open ('exam2.html','_self',false)
+		console.log("answered");
+        window.location = "exam2.html";
+    }
+  };
 
     var commands = {':letter': letter};
 
@@ -55,4 +73,6 @@ if (annyang) {
 
   // Start listening. You can call this here, or attach this call to an event, button, etc.
   annyang.start();}
+  annyang.start();
+}
 </script>
