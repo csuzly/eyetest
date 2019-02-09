@@ -1,5 +1,5 @@
 html {
-    background-color: cadetblue;
+    background-color: rgb(255, 255, 255);
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
@@ -37,5 +37,17 @@ a {
 }
 
 h1 {
-    padding: 40px;
+    padding: 10px;
+}
+
+.header {
+    background-color: cadetblue;
+}
+
+.subheader {
+    background-color: cadetblue;
+}
+
+.test {
+    padding: 125px;
 }
