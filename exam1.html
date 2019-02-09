@@ -48,6 +48,19 @@ if (annyang) {
     }
   };
 
+
+  
+  // Add our commands to annyang
+  annyang.addCommands(commands);
+
+  // Start listening. You can call this here, or attach this call to an event, button, etc.
+  annyang.start();
+}
+</script>
+
+
+
+<!-- 
     var commands = {':letter': letter};
 
     var letter = function(letter) {
@@ -66,11 +79,4 @@ if (annyang) {
         }
         $('#letter').text('Hello!');
     }
-    
-  // Add our commands to annyang
-  annyang.addCommands(commands);
-
-  // Start listening. You can call this here, or attach this call to an event, button, etc.
-  annyang.start();
-}
-</script>
+    -->
