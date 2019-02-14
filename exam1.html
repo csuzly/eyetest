@@ -9,8 +9,6 @@
 		<link rel="stylesheet" href="exams.css">
 	</head>
 	<body>
-		<h1>
-			<a href="index.html">Online Optics</a>
 		<h1 class="header">
 
 			<a href="index.html">optics</a>
@@ -36,7 +34,7 @@
 
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
-<script type="text/javascript">
+<script>
 if (annyang) {
 	console.log(annyang);
   // Let's define our first command. First the text we expect, and then the function it should call
@@ -44,12 +42,15 @@ if (annyang) {
     'answer': function() {
         // sessionstorage.setItem("Question1", 1)
         // window.open ('exam2.html','_self',false)
-		console.log("answered");
+		console.log("answer");
+		<a href="exam2.html" class="hover">
+			<p class="start">
+				Next Phase
+			</p>
+		</a>
     }
   };
 
-
-  
   // Add our commands to annyang
   annyang.addCommands(commands);
 
@@ -57,26 +58,3 @@ if (annyang) {
   annyang.start();
 }
 </script>
-
-
-
-<!-- 
-    var commands = {':letter': letter};
-
-    var letter = function(letter) {
-        var correct = 0;
-        var wrong = 0;
-        var letter = document.querySelectorAll(".question");
-        var quizArray = [document.getElementById("letter")];
-
-        for (i = 0; i < quizArray.length; i++) {
-            if ($(':letter') == quizArray[i].answer.toLowerCase()) {
-            correct += 1;
-            document.getElementById('score').value = correct
-            } else {
-            correct += 0
-            }
-        }
-        $('#letter').text('Hello!');
-    }
-    -->
