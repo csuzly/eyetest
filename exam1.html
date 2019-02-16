@@ -39,13 +39,21 @@ if (annyang) {
 	console.log(annyang);
   // Let's define our first command. First the text we expect, and then the function it should call
   var commands = {
-    'answer': function() {
-        // sessionstorage.setItem("Question1", 1)
-        // window.open ('exam2.html','_self',false)
+    'The letter is :letter': letter;
+  };
+
+  var letter = function(letter) {
 		console.log("answer")
+        if (leter == documnet.getElementById("letter")) {
+            sessionstorage.setItem("Question1", 1)
+            console.log("correct")
+        }
+        else {
+            sessionstorage.setItem("Question1", 0)
+            console.log("incorrect")
+        }
 		window.location.replace("https://eyetest.netlify.com/exam2.html");
     }
-  };
 
   // Add our commands to annyang
   annyang.addCommands(commands);
