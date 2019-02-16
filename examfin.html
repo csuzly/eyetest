@@ -6,7 +6,7 @@
 			GET-HIP Project
 		</title>
 
-		<link rel="stylesheet" href="exams.css">
+		<link rel="stylesheet" href="index.css">
 	</head>
 	<body>
 		<h1 class="header">
@@ -14,8 +14,38 @@
 			<a href="index.html">optics</a>
 		</h1>
         <p class="subheader">
-			Congratulations, You Have Completed The Test!
+			Question 1
 		</p>
-		<p>Based on how long the test took you to complete, you should now have a better idea if you need glasses.<br>If you had to take multiple guesses on more than one letter, we recommend seeing a trained optometrist as we are not certified doctors.</p>
+		<h2> <p class="test" id="letter"> </p> </h2>
 	</body>
 </html>
+
+<script>
+
+    document.getElementById("letter").innerHTML= "J";
+        
+</script>
+        
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+<script>
+if (annyang) {
+	console.log(annyang);
+  // Let's define our first command. First the text we expect, and then the function it should call
+  var commands = {
+    'J': function() {
+        // sessionstorage.setItem("Question1", 1)
+        // window.open ('exam2.html','_self',false)
+		console.log("answer")
+		window.location.replace("https://eyetest.netlify.com/exam5.html");
+    }
+  };
+
+  // Add our commands to annyang
+  annyang.addCommands(commands);
+
+  // Start listening. You can call this here, or attach this call to an event, button, etc.
+  annyang.start();
+}
+</script>
