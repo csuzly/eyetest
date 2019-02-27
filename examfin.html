@@ -6,7 +6,7 @@
 			GET-HIP Project
 		</title>
 
-		<link rel="stylesheet" href="exams.css">
+		<link rel="stylesheet" href="index.css">
 	</head>
 	<body>
 		<h1 class="header">
@@ -14,15 +14,15 @@
 			<a href="index.html">optics</a>
 		</h1>
         <p class="subheader">
-			Question 4
+			Question 1
 		</p>
-		<h2> <p class="test" id="letter"> </p> </h2>
+		<p>Based on how long the test took you to complete, you should now have a better idea if you need glasses.<br>If you had to take multiple guesses on more than one letter, we recommend seeing a trained optometrist as we are not certified doctors. </p>
 	</body>
 </html>
 
 <script>
 
-    document.getElementById("letter").innerHTML= "R";
+    document.getElementById("letter").innerHTML= "J";
         
 </script>
         
@@ -34,10 +34,10 @@ if (annyang) {
 	console.log(annyang);
   // Let's define our first command. First the text we expect, and then the function it should call
   var commands = {
-    'R': function() {
+    'J': function() {
         // sessionstorage.setItem("Question1", 1)
         // window.open ('exam2.html','_self',false)
-		console.log("correct answer")
+		console.log("answer")
 		window.location.replace("https://eyetest.netlify.com/exam5.html");
     }
   };
