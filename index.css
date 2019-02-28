@@ -37,7 +37,7 @@ a {
 }
 
 .centered {
-    align-content: center;
+    text-align: center;
 }
 h1 {
     padding: 10px;
