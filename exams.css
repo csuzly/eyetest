@@ -20,7 +20,7 @@ a {
 .hover :hover {
     border: white;
     border-style: solid;
-    border-width: 2px; 
+    border-width: 24px; 
     padding-top: 18px;
     padding-bottom: 18px;
     border-color: #fff;
@@ -50,4 +50,5 @@ h1 {
 
 .test {
     padding: 125px;
+    font-size: 12px;
 }
